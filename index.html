@@ -28,19 +28,18 @@
                 <source src="HEADERVIDEO.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
+            <!-- hero header removed from showreel; moved into About section -->
         </div>
     </section>
 
 
-    <header>
-        <h1>MICHELE DOMENICO VERNONE</h1>
-        <p>Game Developer | Gamer</p>
-        <img src="Profile-picture.jpg" alt="Profile Picture" class="profile-pic">
-    </header>
-
-
     <section id="about">
         <h2>About me</h2>
+        <div class="about-header">
+            <h1>MICHELE DOMENICO VERNONE</h1>
+            <p class="role">Game Developer | Gamer</p>
+            <img src="Profile-picture.jpg" alt="Profile Picture" class="profile-pic">
+        </div>
         <p>Hi! I'm Michele Domenico Vernone, a Game Developer with a passion for learning and acquiring new knowledge.
         </p>
         <p>I specialize in C#, C++, Python, Unity, and Unreal Engine, and I'm always eager to explore new technologies
@@ -50,22 +49,38 @@
         <p>Feel free to explore my portfolio and check out some of the projects I've worked on!</p>
         
         <h3>Certifications</h3>
-        <div class="certifications">
-            <div class="certification">
-                <img src="Attestato Primo Anno AIV01.pdf" alt="Certification 1" class="cert-image">
-                <h4>Certification 1</h4>
+        <div class="certifications-container">
+            <button class="cert-nav-btn cert-prev" onclick="prevCert()">&#10094;</button>
+            <div class="pdf-carousel-wrapper">
+                <div class="pdf-carousel" id="pdf-carousel">
+                    <div class="pdf-item" data-id="0" onclick="openModal(this)">
+                        <img src="First Year Certification.png" data-full="First Year Certification.png" alt="Attestato 1" class="cert-thumb">
+                    </div>
+                    <div class="pdf-item" data-id="1" onclick="openModal(this)">
+                        <img src="Second Year Certification.png" data-full="Second Year Certification.png" alt="Attestato 2" class="cert-thumb">
+                    </div>
+                    <div class="pdf-item" data-id="2" onclick="openModal(this)">
+                        <img src="Third Year Certification.png" data-full="Third Year Certification.png" alt="Attestato 3" class="cert-thumb">
+                    </div>
+                    <div class="pdf-item" data-id="3" onclick="openModal(this)">
+                        <img src="SK Year Certification.png" data-full="SK Year Certification.png" alt="Attestato 4" class="cert-thumb">
+                    </div>
+                </div>
             </div>
-            <div class="certification">
-                <img src="Attestato Secondo Anno AIV02.pdf" alt="Certification 2" class="cert-image">
-                <h4>Certification 2</h4>
-            </div>
-            <div class="certification">
-                <img src="VGP_3-2025_23_Vernone.pdf" alt="Certification 3" class="cert-image">
-                <h4>Certification 3</h4>
-            </div>
-            <div class="certification">
-                <img src="Attestati AIV - WS SOFT SKILLS 2024_VERNONE.pdf" alt="Certification 4" class="cert-image">
-                <h4>Certification 4</h4>
+            <button class="cert-nav-btn cert-next" onclick="nextCert()">&#10095;</button>
+        </div>
+        <div class="carousel-indicators" id="carousel-indicators">
+            <span class="carousel-indicator" data-id="0" onclick="goToCert(0)"></span>
+            <span class="carousel-indicator" data-id="1" onclick="goToCert(1)"></span>
+            <span class="carousel-indicator" data-id="2" onclick="goToCert(2)"></span>
+            <span class="carousel-indicator" data-id="3" onclick="goToCert(3)"></span>
+        </div>
+        
+        <!-- Modal per visualizzazione a schermo intero -->
+        <div id="pdf-modal" class="pdf-modal" onclick="closeModal(event)">
+            <div class="pdf-modal-content" onclick="event.stopPropagation()">
+                <span class="close-modal" onclick="closeModal()">&times;</span>
+                <img id="pdf-modal-image" src="" alt="Certificato" class="pdf-modal-viewer">
             </div>
         </div>
     </section>
