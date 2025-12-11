@@ -26,7 +26,7 @@ nav a {
   color: #FFFFFF;
   transition: color 0.3s;
 }
-nav a:hover { color: #6A0DAD; }
+nav a:hover { color: #FF8C00; }
 
 /* Hero / Showreel */
 #showreel { padding: 0; max-width: none; margin: 0; }
@@ -87,7 +87,7 @@ header.hero p { font-size: 1.2rem; margin-top: 1rem; max-width: 600px; color: #E
 }
 .about-header h1 {
   font-size: 2.4rem;
-  color: #6A0DAD;
+  color: #FF8C00;
   margin-bottom: 0.2rem;
 }
 .about-header .role {
@@ -125,7 +125,7 @@ font-size: 2rem;
 font-weight: 800;
 margin-bottom: 2rem;
 text-align: center;
-color: #6A0DAD;
+color: #FF8C00;
 }
 .showreel-container {
 display: flex;
@@ -172,7 +172,7 @@ padding-bottom: 4rem;
 }
 .project h3 {
 margin-bottom: 0.5rem;
-color: #6A0DAD;
+color: #FF8C00;
 }
 .project p {
 color: #B3B3B3;
@@ -185,7 +185,7 @@ color: #B3B3B3;
 background: #0D0D0D;
 }
 a {
-color: #6A0DAD;
+color: #FF8C00;
 }
 
 .btn {
@@ -194,7 +194,7 @@ color: #6A0DAD;
   left: 1rem;
   top: auto;
   padding: 0.6rem 1.2rem;
-  background: #6A0DAD;
+  background: #FF8C00;
   color: #fff;
   text-decoration: none;
   font-weight: 600;
@@ -203,7 +203,7 @@ color: #6A0DAD;
   margin-top: 5px auto;
 }
 .btn:hover {
-  background: #520a87;
+  background: #E67E00;
 }
 
 .profile-pic {
@@ -211,7 +211,7 @@ color: #6A0DAD;
   height: 300px;
   object-fit: cover;
   margin-top: 1rem;
-  border: 4px solid #6A0DAD;
+  border: 4px solid #FF8C00;
 }
 
 /* smaller profile when over hero video */
@@ -226,7 +226,7 @@ section h3 {
   font-weight: 800;
   margin-bottom: 1.5rem;
   margin-top: 2rem;
-  color: #6A0DAD;
+  color: #FF8C00;
 }
 
 .certifications-container {
@@ -279,7 +279,7 @@ section h3 {
 .pdf-item.center .cert-thumb {
   transform: scale(1.06);
   box-shadow: 0 18px 40px rgba(0,0,0,0.7);
-  border: 3px solid rgba(106,13,173,0.12);
+  border: 3px solid rgba(255,140,0,0.12);
 }
 
 /* indicators */
@@ -298,13 +298,13 @@ section h3 {
   transition: transform 0.2s ease, background 0.2s ease;
 }
 .carousel-indicator.active {
-  background: #6A0DAD;
+  background: #FF8C00;
   transform: scale(1.2);
-  box-shadow: 0 6px 12px rgba(106,13,173,0.25);
+  box-shadow: 0 6px 12px rgba(255,140,0,0.25);
 }
 
 .cert-nav-btn {
-  background: #6A0DAD;
+  background: #FF8C00;
   color: white;
   border: none;
   width: 50px;
@@ -320,7 +320,7 @@ section h3 {
 }
 
 .cert-nav-btn:hover {
-  background: #8B2DBE;
+  background: #E67E00;
   transform: scale(1.1);
 }
 
@@ -378,7 +378,7 @@ section h3 {
 }
 
 .close-modal:hover {
-  color: #6A0DAD;
+  color: #FF8C00;
 }
 
 /* Mobile Responsive Design */
